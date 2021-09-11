@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ConstructDemo.FinalSolution;
-using ConstructDemo.UC10;
-using ConstructDemo.UC9;
+using EmployeeWageComputationProblem.FinalSolution;
+using EmployeeWageComputationProblem.UC10;
+using EmployeeWageComputationProblem.UC9;
 
 namespace EmployeeWageComputationProblem
 {
@@ -14,7 +14,7 @@ namespace EmployeeWageComputationProblem
         public static void Main(string[] args)
         {
            //Use Case 1: Check Employee is present or absent
-            UC1_EmployeeAttendance.GetAttendance();
+           // UC1_EmployeeAttendance.GetAttendance();
 
 
             //Use Case 2: Calculate Daily Employee Wage
