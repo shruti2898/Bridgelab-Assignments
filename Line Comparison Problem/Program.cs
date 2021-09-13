@@ -7,9 +7,12 @@ namespace LineComparison
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Line Comparison Computation Program");
-            //UC1_LengthOfALine.LengthOfLine();
-            //UC2_EqualityOfTwoLines.EqualityOfTwoLines();
+            //CalculateDistance.Distance();
+           // UC1_LengthOfALine.LengthOfLine();
+           //  UC2_EqualityOfTwoLines.EqualityOfTwoLines();
             UC3_ComparingTwoLines.ComparingTwoLines();
+
+            Console.ReadKey();
         }
     }
 }

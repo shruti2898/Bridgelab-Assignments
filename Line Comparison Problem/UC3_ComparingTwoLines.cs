@@ -9,25 +9,44 @@ namespace LineComparison
         public static void ComparingTwoLines()
         {
             Console.WriteLine("Please enter co-ordinates of Line AB: ");
-            double distanceAB = CalculateDistance.Distance();
+            float distanceAB = CalculateDistance.Distance();
             Console.WriteLine("Please enter co-ordinates of Line CD: ");
-            double distanceCD = CalculateDistance.Distance();
+            float distanceCD = CalculateDistance.Distance();
 
             Console.WriteLine("Length of Line AB is :   " + distanceAB);
             Console.WriteLine("Length of Line CD is :   " + distanceCD);
 
-            if (distanceAB == distanceCD)
+            int status = distanceAB.CompareTo(distanceCD);
+
+            if (status > 0)
             {
-                Console.WriteLine("Length of AB and CD are equal. So lines AB and CD are Equal.");
+                Console.WriteLine("Length of line AB is greater than length of line CD");
             }
-            else if( distanceAB > distanceCD)
+            else if (status < 0)
             {
-                Console.WriteLine("Length of AB is greater than CD.");
+                Console.WriteLine("Length of line AB is less than length of line CD");
             }
             else
             {
-                Console.WriteLine("Length of AB is less than CD.");
+                Console.WriteLine("Length of line AB and llength of line CD are equal");
             }
+               
         }
+
+
+        //Alternate Method
+        //if (distanceAB == distanceCD)
+        //{
+        //    Console.WriteLine("Length of AB and CD are equal. So lines AB and CD are Equal.");
+        //}
+        //else if( distanceAB > distanceCD)
+        //{
+        //    Console.WriteLine("Length of AB is greater than CD.");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Length of AB is less than CD.");
+        //}
     }
-}
+    }
+

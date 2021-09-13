@@ -6,15 +6,22 @@ namespace LineComparison
 {
     class CalculateDistance
     {
-        public static double Distance()
+        public static float Distance()
         {
+            Console.Write("Co-ordinates of Start Point: ");
+            int x1, y1;
+            string line1 = Console.ReadLine();
+            string[] numbers1 = line1.Split(',');
+            x1 = int.Parse(numbers1[0]);
+            y1 = int.Parse(numbers1[1]);
+            Console.Write("Co-ordinates of End Point: ");
+            int x2, y2;
+            string line2 = Console.ReadLine();
+            string[] numbers2 = line2.Split(',');
+            x2 = int.Parse(numbers2[0]);
+            y2 = int.Parse(numbers2[1]);
 
-            double x1 = Convert.ToDouble(Console.ReadLine());
-            double y1 = Convert.ToDouble(Console.ReadLine());
-            double x2 = Convert.ToDouble(Console.ReadLine());
-            double y2 = Convert.ToDouble(Console.ReadLine());
-
-            double distance = Math.Sqrt((Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2)));
+            float distance = (float) Math.Sqrt((Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2)));
             return distance;
         }
     }
