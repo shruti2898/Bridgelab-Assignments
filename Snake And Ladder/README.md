@@ -1,6 +1,6 @@
 ### Snake And Ladder Game
 
-#####Game Use cases are as given below-
+##### Game Use cases are as given below-
 
 
 1.  Snake and Ladder game played with single player at start position 0
