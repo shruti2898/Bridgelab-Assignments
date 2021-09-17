@@ -14,7 +14,7 @@ namespace LogicalPrograms
             int num = Convert.ToInt32(Console.ReadLine());
             Console.Write(firstTerm);
 
-            for(int i=1; i<=num; i++)
+            for(int i=1; i<num; i++)
             {
                 Console.Write(" + "+secondTerm);
                 int temp;
