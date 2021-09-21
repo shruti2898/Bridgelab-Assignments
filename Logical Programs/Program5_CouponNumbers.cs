@@ -9,25 +9,18 @@ namespace LogicalPrograms
         static char[] code = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789".ToCharArray();
         public static void CouponNumbers()
         {
-            Console.Write("Enter number of coupons that you want to generate:   ");
+            Console.Write("Enter a number coupon code length:   ");
             int num = Convert.ToInt32(Console.ReadLine());
-
-
-            
-            int couponLength = 8;
+            StringBuilder str = new StringBuilder();
             Random random = new Random();
-            for(int couponNumber =1; couponNumber <= num; couponNumber++)
+
+            for (int i = 0; i < num; i++) 
             {
-                StringBuilder str = new StringBuilder();
-                for (int i = 0; i < couponLength; i++)
-                {
                     int position = random.Next(0, code.Length);
                     str.Append(code[position]);
-                }
-                Console.WriteLine("\n\nCoupon Code-{0}:  {1}",couponNumber, str);
             }
-          
-            
-          }      
+
+            Console.WriteLine("\n\nCoupon Code:  " + str);
+        }      
     }
 }
